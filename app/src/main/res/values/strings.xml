@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Code Hero</string>
+    <string name="todo">TODO</string>
+    <string name="tony_stark">Tony Stark</string>
+    <string name="nome_do_personagem">Nome do Personagem</string>
+    <string name="text_search">BUSCA</string>
+    <string name="text_marvel">MARVEL</string>
+    <string name="character">Os maiores personagens da Marvel</string>
+    <string name="description">Conheça todas os super-heróis da Marvel</string>
+    <string name="fechar">Fechar</string>
+</resources>
