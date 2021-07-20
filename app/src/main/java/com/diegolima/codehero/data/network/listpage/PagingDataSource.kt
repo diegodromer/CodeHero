@@ -44,12 +44,13 @@ class PagingDataSource(
     ) {
         compositeDisposable.add(
             retrofitServices.allCharacters(requestedPage * requestedLoadSize)
-                .subscribe {
-                    initialCallback?.onResult(it.data.results, null, adjacentPage)
-                    callback?.onResult(it.data.results, adjacentPage)
-                    it.data.results[0].name
-                    it.data.results[0].description
-                }
+                .subscribe(
+                    {
+                        initialCallback?.onResult(it.data.results, null, adjacentPage)
+                        callback?.onResult(it.data.results, adjacentPage)
+                    }, {
+                    }
+                )
         )
     }
 }

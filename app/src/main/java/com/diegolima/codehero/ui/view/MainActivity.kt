@@ -57,6 +57,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
         getUserData()
     }
 
+    override fun onPause() {
+        super.onPause()
+        finish()
+    }
+
     private fun getUserData() {
         var adapter = dataAdapter
         recycler_view.adapter = adapter
